@@ -1,0 +1,103 @@
+.publication{
+    background-color: #F5F5FA;
+    padding-top: 100px;
+    position: relative;
+
+   .gradient{
+        bottom: 0;
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, $white 86.5%);
+
+        p{  
+            width: 250px;
+            margin: 100px auto;
+            border-radius: 12px;
+            color: $white;
+            padding: 15px 20px;
+            background-color: $blue_txt;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            transition: 0.3s;
+
+            &:hover{
+                box-shadow: 0 0 10px #858585;
+            }
+        }  
+    }
+
+    .container{
+
+        .row>* {
+            padding-left:0;
+
+            &:nth-child(3){
+                padding-right: 0;
+            }
+
+            p{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                color: $blue_txt;
+            }
+
+            h3{ 
+                padding-bottom: 30px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 50px;
+                color: $red_txt;
+            }
+            
+            .bot{
+                margin-top: 20px;
+            }
+
+            .item{
+                padding-left: 0;
+                background-color: $white;
+                border-radius: 8px;
+                transition: 0.3s;
+
+                &:hover{
+                    box-shadow: 0 0 10px #858585;
+                }
+                
+                img{
+                    width: 100%;
+                }
+                
+                h4{ 
+                    padding: 10px 0 0 10px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $blue_txt;
+                }
+
+                .date{
+                    padding: 0 0 0 10px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 1px;
+                    color: #F5F5FA;
+                }
+
+                p{  
+                    padding: 0 0 10px 10px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $black;
+                    margin: 0;
+                }
+            }
+        }      
+    }      
+}

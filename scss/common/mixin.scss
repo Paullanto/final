@@ -1,0 +1,14 @@
+@mixin info_col($height, $padding) {
+    @extend %flex;
+    height: $height;
+    padding: $padding; 
+    
+}
+
+@mixin h3_before($color) {
+    @extend %position;
+    background-color: $color;
+}
+
+
+

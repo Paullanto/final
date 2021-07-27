@@ -1,0 +1,28 @@
+.case{
+    padding-bottom: 50px;
+    
+    .container{
+        background-color:#F5F5FA;
+        border-radius: 12px;
+
+        .col-xxl-3,
+        .col-xxl-4,
+        .col-xxl-4{
+            border: 2px solid #fff;
+        }
+
+        p{
+            font-size: 24px;
+            line-height: 28px;
+            color: #686887;   
+        } 
+
+        .company_name{
+            margin: 0;
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 26px;
+            color: #B3B3BA; 
+        }
+    }   
+} 

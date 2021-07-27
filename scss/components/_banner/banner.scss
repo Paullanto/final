@@ -1,0 +1,160 @@
+.banner{
+    background: linear-gradient(42.01deg, $blue_grad_first 14.33%, $blue_grad_first 51.39%, #7A425E 87.53%);
+    height: 2150px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+
+    .container{
+        padding-top: 880px;
+
+        .row_size{
+            height: 270px;
+            --bs-gutter-x: 0;
+
+            .left, .line, 
+            .right, .item{
+                z-index: 3;
+            }
+
+            .left{
+                font-family: sans-serif;
+                text-align: end;
+                font-size: 42px;
+                line-height: 50px;
+
+                h3{
+                    height: 50px;  
+                    font-size: 40px;
+                    line-height: 50px;
+                    color: $gray;
+                    font-weight: 700;
+                    position: relative;
+                    transition: 0.3s;
+                    
+                    &::before{
+                        @include h3_before($white);
+                        transition: 0.3s;
+                    }
+
+                    &:hover{
+                        color: $red_txt;
+                        
+
+                        &::before{
+                            @include h3_before($red_txt);
+                        }
+                    }  
+                }
+            }
+
+
+            .right{
+                color: $white;
+                max-width: 600px;
+
+                h4{
+                    margin-top: 25px;
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+                p{  
+                    margin: 40px 0 0;
+                    height: 120px;
+                    font-size: 21px;
+                    line-height: 30px;
+                }  
+            }
+
+            span{
+                color: $white;
+            }
+
+            .col-12{
+                padding: 100px 0 0;
+
+                h3{
+                    font-size: 42px;
+                    line-height: 50px;
+                    color: $red_txt;
+                    margin: 0;
+                    padding-bottom: 68px;
+                }
+            }
+
+            .col-xxl-4{
+
+                h4{
+                    padding: 20px 0;
+                    font-size: 24px;
+                    color: $blue_txt;
+                }
+
+                p{  
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+    .background{
+        .vector{
+            z-index: 1;
+            position: absolute;
+            max-width: 595px;
+            height: 687px;
+            left: calc(50% - 595px/2 + 0.5px);
+            top: 300px;
+
+            &::before{
+               content: "системний адміністратор правових рішень";
+               position: absolute;
+               z-index: 3;
+               width: 550px;
+               top: 100px;
+               color: $white;
+               font-size: 45px;
+               line-height: 45px;
+               text-align: center;
+            }
+
+            
+            .vector2{
+                position: absolute;
+                right: 72.5px;
+                top: 11.7%;
+                bottom: 70%;
+            }   
+        }
+    
+        .frame{
+            z-index: 0;
+            position: absolute;
+            width: 689px;
+            height: 644px;
+            left: calc(50% - 689px/2 + 0.5px);
+            top: 178px;
+    
+        }
+    
+        .mid_bg{
+            z-index: 2;
+            width: 100%;
+            position: absolute;
+            height: 200px;
+            bottom: 1390px;
+            background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, $blue_grad_first 100%);
+        }
+
+        .bottom_bg{
+            z-index: 2; 
+            width: 100%;
+            position: absolute;
+            top: 759px;
+            height: 1394px;
+            background: linear-gradient(228.57deg, $blue_grad_first 11.93%, $blue_grad_first 57.17%, #643E72 87.46%);
+            border-radius: 0px 0px 12px 12px;
+        }    
+    } 
+}
